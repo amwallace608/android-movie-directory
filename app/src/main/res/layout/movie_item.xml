@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/movieImg"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/movieTitleTxt"
+                android:paddingStart="5dp"
+                android:text="Movie Title:"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/movieImg"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <TextView
+                android:id="@+id/movieReleaseTxt"
+                android:padding="5dp"
+                android:layout_toEndOf="@id/movieImg"
+                android:layout_below="@+id/movieTitleTxt"
+                android:text="Release Date:"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <TextView
+                android:id="@+id/movieCatTxt"
+                android:padding="5dp"
+                android:layout_below="@+id/movieReleaseTxt"
+                android:layout_toEndOf="@+id/movieImg"
+                android:text="Category:"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
